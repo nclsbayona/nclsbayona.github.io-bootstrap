@@ -57,3 +57,7 @@ body {
 .container{
   padding-top: 0.75rem;
 }
+
+.small-img{
+  width: 50px;
+}
