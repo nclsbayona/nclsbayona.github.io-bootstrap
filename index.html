@@ -3,56 +3,71 @@
 <html>
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Resume page">
+  <meta name="author" content="Nicolas Bayona">
   <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/main-page.css" />
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <!--
   Credits to:
   https://getbootstrap.com/docs/5.2/examples/navbars-offcanvas/
-  
+  https://getbootstrap.com/docs/5.2/examples/navbar-fixed/
+  https://getbootstrap.com/docs/5.2/examples/sticky-footer/
 -->
-<body>
-<nav class="navbar navbar-dark bg-dark" aria-label="Dark offcanvas navbar">
+
+<body class="bg-secondary align-middle">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Dark offcanvas navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark">
+      <a class="navbar-brand" href="#">nclsbayona</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">Offcanvas</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex mt-3" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#main">Main</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
     </div>
   </nav>
+
+  <div class="container" id="main">
+    <div class="bg-light p-5 rounded border border-dark">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="lead display-4 text-center font-weight-bold text-danger">nclsbayona</h1>
+          <p class="text-center">I'm a tech enthusiast that really likes developing software and learning new technologies.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="about">
+    <div class="bg-light p-5 rounded border border-dark">
+      <h1>Navbar example</h1>
+      <p class="lead">This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll, it
+        will remain fixed to the top of your browser’s viewport.</p>
+      <a class="btn btn-lg btn-primary" href="../components/navbar/" role="button">View navbar docs &raquo;</a>
+    </div>
+  </div>
+
+  <footer class="footer bg-dark border border-light">
+    <div class="container text-right text-light">nclsbayona</div>
+  </footer>
+  
 </body>
 
 </html>
