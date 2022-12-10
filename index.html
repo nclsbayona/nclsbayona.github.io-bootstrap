@@ -7,7 +7,8 @@
   <!-- Page metadata -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="I'm nclsbayona, a systems engineering student passionate about developing new software and using software that already exists.">
+  <meta name="description"
+    content="I'm nclsbayona, a systems engineering student passionate about developing new software and using software that already exists.">
   <meta name="author" content="Nicolas Bayona">
   <!-- Favicon and site specific stuff -->
   <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -37,6 +38,7 @@
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container-fluid">
+        <img class="col-1 rounded small-img" src="assets/favicon/favicon-32x32.png" />
         <a class="navbar-brand" href="#">nclsbayona</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
           aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +50,10 @@
               <a class="nav-link" aria-current="page" href="#main">Main</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#facts">Facts</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#recent">Recent</a>
@@ -57,17 +62,17 @@
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
+          <!--form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+        </form-->
         </div>
       </div>
     </nav>
   </header>
 
   <main role="main" class="container">
-    <div class="container" id="main">
+    <div class="container my-2" id="main">
       <div class="bg-light p-5 rounded border border-dark">
         <div class="jumbotron jumbotron-fluid text-center">
           <div class="container">
@@ -80,7 +85,7 @@
       </div>
     </div>
 
-    <div class="container text-center" id="about">
+    <div class="container text-center my-2" id="resume">
       <div class="bg-light p-5 rounded border border-dark">
         <h1>My resume</h1>
         <p class="lead">My resume is hosted on GitHub, you can check it clicking the following button.</p>
@@ -90,15 +95,103 @@
       </div>
     </div>
 
-    <div class="container text-center" id="recent">
+    <div class="container text-center rounded border-dark my-2" id="facts">
+      <div class="row my-1">
+        <div class="col card text-bg-primary">
+          <div class="card-header">Frontend Development</div>
+          <div class="card-body">
+            <h5 class="card-title">Flutter</h5>
+            <p class="card-text">I like Flutter because it's a powerful framework that allows the creation of pretty
+              frontends, and even though I'm not a fan of frontend development, I like Flutter.</p>
+          </div>
+        </div>
+
+        <div class="col card text-bg-danger">
+          <div class="card-header">Backend Development</div>
+          <div class="card-body">
+            <h5 class="card-title">Spring Boot</h5>
+            <p class="card-text">I like Spring Boot framework for activities related to backend development because it
+              diminishes the complexity of connecting different components.</p>
+          </div>
+        </div>
+
+        <div class="col card text-bg-light">
+          <div class="card-header">General Development</div>
+          <div class="card-body">
+            <h5 class="card-title">Automation</h5>
+            <p class="card-text">I like automating repetitive tasks and focusing myself on non-repetitive tasks that
+              deliver value to people.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row my-1">
+        <div class="col card text-bg-success">
+          <div class="card-header">General Development</div>
+          <div class="card-body">
+            <h5 class="card-title">DevOps</h5>
+            <p class="card-text">I think DevOps is really useful for development because it allows for a greater
+              collaboration between people.</p>
+          </div>
+        </div>
+
+        <div class="col card text-bg-warning">
+          <div class="card-header">General Development</div>
+          <div class="card-body">
+            <h5 class="card-title">Virtualization technologies</h5>
+            <p class="card-text">I like working with virtualization technologies and I like virtualizing things, I
+              usually use this on my projects and I've enjoyed the experience so far a lot.</p>
+          </div>
+        </div>
+
+        <div class="col card text-bg-info">
+          <div class="card-header">General Development</div>
+          <div class="card-body">
+            <h5 class="card-title">Security</h5>
+            <p class="card-text">I try to always be aware of security-related threats and vulnerabilities in everything
+              I do,
+              and motivate people to acquire a more security-minded culture.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row my-1">
+        <div class="col card text-bg-light">
+          <div class="card-header">General Development</div>
+          <div class="card-body">
+            <h5 class="card-title">Containers</h5>
+            <p class="card-text">I like using containerization in my projects because I think containers give us great
+              oportunities.</p>
+          </div>
+        </div>
+
+        <div class="col card text-bg-danger">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h5 class="card-title">Primary card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+
+        <div class="col card text-bg-primary">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h5 class="card-title">Primary card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center my-2" id="recent">
       <div class="bg-light p-5 rounded border border-dark">
         <h1>Recent Activity</h1>
         <h3 class="font-weight-bold">Twitter</h3>
-        <a class="twitter-timeline" href="https://twitter.com/nclsbayona?ref_src=twsrc%5Etfw">Tweets by nclsbayona</a> 
+        <a class="twitter-timeline" href="https://twitter.com/nclsbayona?ref_src=twsrc%5Etfw">Tweets by nclsbayona</a>
       </div>
     </div>
-    
-    <div class="container text-center" id="contact">
+
+    <div class="container text-center my-2" id="contact">
       <div class="bg-light p-5 rounded border border-dark">
         <h1>Contact me!</h1>
         <p class="lead">You can contact me via different ways.</p>
@@ -111,7 +204,7 @@
           </svg>
           Telegram
         </button>
-        
+
         <button type="button" class="btn btn-outline-dark" href="https://github.com/nclsbayona">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
             viewBox="0 0 16 16">
@@ -143,12 +236,9 @@
         </button>
       </div>
     </div>
-
-    <div class="footer">
-    </div>
   </main>
 
-  <footer class="footer mt-auto py-3 bg-dark border border-light">
+  <footer class="footer mt-2 py-3 bg-dark border border-light">
     <div class="container">
       <div class="row inline-flex">
         <img class="col-1 rounded small-img" src="assets/favicon/favicon-32x32.png" />
@@ -161,8 +251,8 @@
   <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   <!-- jQuery -->
-<script src="https://code.jquery.com/jquery-1.12.4.js" 
-integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+  <!--script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+    crossorigin="anonymous"></script-->
 </body>
 
 </html>
