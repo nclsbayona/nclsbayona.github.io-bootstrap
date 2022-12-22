@@ -55,5 +55,18 @@ body {
 }
 
 .small-img{
-  width: 50px;
+  width:2%
+}
+
+/* This is taken from catto-css library: https://www.cattocss.com/ */
+.btn{
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+}
+.btn:hover{
+    box-shadow: 0 8px 8px 0 #bebbbc,0 8px 8px 0 #adadab;
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    -moz-transform:translate(0px,5px);
 }
