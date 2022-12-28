@@ -83,6 +83,7 @@
             <p>I'm a tech enthusiast that really likes developing software, learning new
               technologies and helping to bring technology to people's lives.</p>
             <img class="rounded mx-auto d-block border border-secondary img-fluid" src="assets/images/nclsbayona.png" alt="nclsbayona"/>
+            <h2 class="developer text-primary">Software Developer</h2>
           </div>
         </div>
       </div>
@@ -242,12 +243,18 @@
     <div class="container my-2" id="projects">
       <div class="bg-light p-5 rounded border border-dark text-center">
         <h1>Cool Projects</h1>
-        <p>Most of my work is uploaded on GitHub, so It's easy to access it and that way I can practice my Git skills too.</p>
+  <p>Most of my work is uploaded on my <a class="btn" href="https://github.com/nclsbayona">GitHub account</a>, so It's easy to access it and that way I can practice my Git skills too.</p>
 
         <form>
           <div class="my-1">
           <h2 class="text-primary">My Cool GitHub Profile README</h2>
-          <p>I developed my Cool GitHub Profile README using Python and a lot of Cool Web APIs to fetch relevant information about me and data I found useful to beautify my profile</p>
+          <p>I developed my Cool GitHub Profile README using Python and a lot of Cool Web APIs to fetch relevant information about me and data I found useful to beautify my profile. With this project I wanted to:
+            <ol>
+              <li>Showcase some of my skills as a developer</li>
+              <li>Practice some of my skills I usually use</li>
+              <li>Stylize my GitHub profile</li>
+            </ol>
+          </p>
           <button type="submit" class="btn btn-outline-dark" formaction="https://github.com/nclsbayona/nclsbayona">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
               viewBox="0 0 16 16"><path
@@ -258,7 +265,7 @@
           <div class="my-1">
           <h2 class="text-success">My Cool Webpage</h2>
           <p>I developed my Cool Webpage using HTML and Bootstrap mainly, in the past I tried to use Angular, Ionic and also some other 
-          Web APIs to make my personal webpage, however looking after dependency conflicts was tedious, so I decided to switch to a more minimalistic approach</p>
+          Web APIs to make my personal webpage, however looking after dependency conflicts was tedious, so I decided to switch to a more minimalistic approach. I think it's also a good idea to say I'm more backend-oriented but I think I can handle frontend pretty good</p>
           <button type="submit" class="btn btn-outline-dark" formaction="https://github.com/nclsbayona/nclsbayona.github.io">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
               viewBox="0 0 16 16"><path
@@ -303,13 +310,13 @@
     <div class="container text-center my-2" id="resume">
       <div class="bg-light p-5 rounded border border-dark">
         <h1>My resume</h1>
-        <p class="lead">My resume is hosted on GitHub, it's also being rendered on GitHub Pages. You can check it visiting any of the following buttons:</p>
-        <a class="btn btn-lg btn-outline-success col-4" href="https://github.com/nclsbayona/MyResume/tree/master/generated"
-          role="button">Check
-          my resume hosted on GitHub!</a>
-        <a class="btn btn-lg btn-outline-success col-4" href="https://nclsbayona.github.io/MyResume/"
-          role="button">Check
-          my resume rendered on GitHub Pages!</a>
+        <p class="lead">My resume's creation is automated using pandoc to transform markdown into various other formats like pdf and html. Therefore, my resume is hosted on GitHub, however it's also being rendered on GitHub Pages so you can view it. You can check it visiting any of the following buttons:</p>
+        <form>
+          <button class="btn btn-lg btn-outline-success" formaction="https://github.com/nclsbayona/MyResume/tree/master/generated">Check
+            my resume hosted on GitHub!</button>
+          <button class="btn btn-lg btn-outline-success" formaction="https://nclsbayona.github.io/MyResume/">Check
+            my resume rendered on GitHub Pages!</button>
+        </form>
       </div>
     </div>
 

@@ -58,6 +58,10 @@ body {
   width:50px
 }
 
+.developer{
+  font-family: Haettenschweiler;
+}
+
 /* This is taken from catto-css library: https://www.cattocss.com/ 
 and https://jaredreich.com/notie 's source code and used https://html-css-js.com/css/generator/text-shadow/ for text-shadow */
 
